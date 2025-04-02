@@ -18,9 +18,10 @@ export default defineConfig({
   resolve: {
     alias: {
       // Настройка алиасов для путей (заменяет относительные пути на @/)
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  base: '/my-vue-app/', // Укажите ваш репозиторий
 })
 
 // =================
